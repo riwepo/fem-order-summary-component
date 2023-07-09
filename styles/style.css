@@ -2,17 +2,35 @@
 :root {
   --white-color: white;
   --pale-blue-color: hsl(225, 100%, 94%);
-  --bright-blue-color: hsl(245, 75%, 52%);
+  --bright-blue-color: #3829e0;
+  --bright-blue-tint-color: #7469e9;
   --very-pale-blue-color: hsl(225, 100%, 98%);
   --desaturated-blue-color: hsl(224, 23%, 55%);
   --dark-blue-color: hsl(223, 47%, 23%);
   --body-background-color: var(--pale-blue-color);
   --order-info-background-color: var(--white-color);
   --order-plan-background-color: var(--very-pale-blue-color);
+  --order-description-text-color: var(--desaturated-blue-color);
+  --order-plan-price-text-color: var(--desaturated-blue-color);
   --order-proceed-background-color: var(--bright-blue-color);
-  --order-proceed-background-active-color: var(--desaturated-blue-color);
+  --order-proceed-background-active-color: var(--bright-blue-tint-color);
   --order-proceed-text-color: var(--white-color);
+  --order-cancel-text-color: var(--desaturated-blue-color);
   --order-info-font-family: "Red Hat Display", sans-serif;
+  --order-heading-font-size: 2rem;
+  --order-heading-font-weight: 900;
+  --order-description-font-size: 1.6rem;
+  --order-description-font-weight: 500;
+  --order-plan-header-font-size: 1.6rem;
+  --order-plan-header-font-weight: 700;
+  --order-plan-price-font-size: 1.6rem;
+  --order-plan-price-font-weight: 500;
+  --order-plan-change-font-size: 1.6rem;
+  --order-plan-change-font-weight: 500;
+  --order-proceed-font-size: 1.6rem;
+  --order-proceed-font-weight: 700;
+  --order-cancel-font-size: 1.6rem;
+  --order-cancel-font-weight: 700;
   font-size: 62.5%;
 }
 
@@ -43,10 +61,14 @@ main {
   border-radius: 2rem 2rem 0 0;
 }
 
+.order__card {
+  margin-bottom: 1rem;
+}
+
 .order__info {
   background-color: var(--order-info-background-color);
   font-family: var(--order-info-font-family);
-  padding: 3rem 3rem;
+  padding: 3rem;
   border-radius: 0 0 2rem 2rem;
   display: flex;
   flex-direction: column;
@@ -55,12 +77,15 @@ main {
 }
 
 .order__heading {
-  font-size: 2rem;
+  font-size: var(--order-heading-font-size);
+  font-weight: var(--order-heading-font-weight);
   margin-bottom: 2rem;
 }
 
 .order__description {
-  font-size: 1.6rem;
+  font-size: var(--order-heading-font-size);
+  font-weight: var(--order-description-font-weight);
+  color: var(--order-description-text-color);
   margin-bottom: 2rem;
 }
 
@@ -76,17 +101,43 @@ main {
   margin-bottom: 2rem;
 }
 
+.order__plan-header {
+  font-size: var(--order-plan-header-font-size);
+  font-weight: var(--order-plan-header-font-weight);
+}
+
+.order__plan-price {
+  font-size: var(--order-plan-price-font-size);
+  font-weight: var(--order-plan-price-font-weight);
+  color: var(--order-plan-price-text-color);
+}
+
+.order__plan-change {
+  font-size: var(--order-plan-change-font-size);
+  font-weight: --order-plan-change-font-weight;
+}
+
 .order__proceed {
   width: 100%;
   background-color: var(--order-proceed-background-color);
-  color: var(--order-proceed-text-color);
   border: none;
   border-radius: 1rem;
   padding: 1rem;
   margin-bottom: 2rem;
+  font-size: var(--order-proceed-font-size);
+  font-weight: var(--order-proceed-font-weight);
+  color: var(--order-proceed-text-color);
 }
 .order__proceed:hover, .order__proceed:active {
   background-color: var(--order-proceed-background-active-color);
+  cursor: pointer;
+}
+
+.order__cancel {
+  font-size: var(--order-cancel-font-size);
+  font-weight: var(--order-cancel-font-weight);
+  color: var(--order-cancel-text-color);
+  text-decoration: none;
 }
 
 footer {
