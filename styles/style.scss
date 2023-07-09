@@ -11,7 +11,6 @@
   --dark-blue-color: hsl(223, 47%, 23%);
 
   // color use
-  --body-background-color: var(--pale-blue-color);
   --order-info-background-color: var(--white-color);
   --order-plan-background-color: var(--very-pale-blue-color);
   --order-description-text-color: var(--desaturated-blue-color);
@@ -54,12 +53,13 @@
 }
 
 body {
-  background-color: var(--body-background-color);
+  background: url(../images/pattern-background-mobile.svg) center/cover
+    no-repeat;
   min-height: 100vh;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 main {
@@ -68,7 +68,7 @@ main {
 }
 
 .order__card {
-  margin-bottom: 1rem;
+  margin: 1rem auto;
 }
 
 .order__image {
@@ -156,4 +156,14 @@ footer {
   font-size: smaller;
   margin: 0 auto;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: url(../images/pattern-background-desktop.svg) center/cover
+      no-repeat;
+  }
+  .order__card {
+    max-width: 80rem;
+  }
 }
