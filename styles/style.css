@@ -9,6 +9,8 @@
   --body-background-color: var(--pale-blue-color);
   --order-info-background-color: var(--white-color);
   --order-plan-background-color: var(--very-pale-blue-color);
+  --order-proceed-background-color: var(--bright-blue-color);
+  --order-proceed-text-color: var(--white-color);
   --order-info-font-family: "Red Hat Display", sans-serif;
   font-size: 62.5%;
 }
@@ -69,6 +71,16 @@ main {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.order__proceed {
+  width: 100%;
+  background-color: var(--order-proceed-background-color);
+  color: var(--order-proceed-text-color);
+  border: none;
+  border-radius: 1rem;
   padding: 1rem;
   margin-bottom: 2rem;
 }
