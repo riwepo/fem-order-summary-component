@@ -67,6 +67,10 @@ main {
   max-height: 90vh;
 }
 
+.order__card {
+  margin-bottom: 1rem;
+}
+
 .order__image {
   background: url(../images/illustration-hero.svg) center/cover no-repeat;
   width: 100%;
@@ -74,9 +78,6 @@ main {
   border-radius: 2rem 2rem 0 0;
 }
 
-.order__card {
-  margin-bottom: 1rem;
-}
 .order__info {
   background-color: var(--order-info-background-color);
   font-family: var(--order-info-font-family);
