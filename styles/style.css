@@ -10,6 +10,7 @@
   --order-info-background-color: var(--white-color);
   --order-plan-background-color: var(--very-pale-blue-color);
   --order-proceed-background-color: var(--bright-blue-color);
+  --order-proceed-background-active-color: var(--desaturated-blue-color);
   --order-proceed-text-color: var(--white-color);
   --order-info-font-family: "Red Hat Display", sans-serif;
   font-size: 62.5%;
@@ -83,6 +84,9 @@ main {
   border-radius: 1rem;
   padding: 1rem;
   margin-bottom: 2rem;
+}
+.order__proceed:hover, .order__proceed:active {
+  background-color: var(--order-proceed-background-active-color);
 }
 
 footer {

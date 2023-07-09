@@ -14,6 +14,7 @@
   --order-info-background-color: var(--white-color);
   --order-plan-background-color: var(--very-pale-blue-color);
   --order-proceed-background-color: var(--bright-blue-color);
+  --order-proceed-background-active-color: var(--desaturated-blue-color);
   --order-proceed-text-color: var(--white-color);
 
   // fonts
@@ -100,6 +101,10 @@ main {
   border-radius: 1rem;
   padding: 1rem;
   margin-bottom: 2rem;
+  &:hover,
+  &:active {
+    background-color: var(--order-proceed-background-active-color);
+  }
 }
 
 footer {
