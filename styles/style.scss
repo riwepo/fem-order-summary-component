@@ -2,6 +2,7 @@
 
 :root {
   // colors
+  --white-color: white;
   --pale-blue-color: hsl(225, 100%, 94%);
   --bright-blue-color: hsl(245, 75%, 52%);
   --very-pale-blue-color: hsl(225, 100%, 98%);
@@ -10,7 +11,8 @@
 
   // color use
   --body-background-color: var(--pale-blue-color);
-  --order-info-background-color: var(--very-pale-blue-color);
+  --order-info-background-color: var(--white-color);
+  --order-plan-background-color: var(--very-pale-blue-color);
 
   // fonts
   --order-info-font-family: "Red Hat Display", sans-serif;
@@ -60,11 +62,32 @@ main {
 .order__info {
   background-color: var(--order-info-background-color);
   font-family: var(--order-info-font-family);
-  padding: 5%;
+  padding: 3rem 3rem;
   border-radius: 0 0 2rem 2rem;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.order__heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.order__description {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.order__plan {
+  background-color: var(--order-plan-background-color);
+  width: 100%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 footer {
