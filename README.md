@@ -54,4 +54,4 @@ I'm still not comfortable with positioning the whole component on the screen for
 
 ## Acknowledgments\
 
-Thanks to [@itus](https://www.frontendmentor.io/profile/itus), Tushar Biswas for the tips he gave me on m last task.
+Thanks to [@itus](https://www.frontendmentor.io/profile/itus), Tushar Biswas for the tips he gave me on my last task.
